@@ -6,4 +6,20 @@ output:
     toc_float: true
 ---
 
-# This page will have information
+# let's use the restaurant data and look at brooklyn
+
+```{r setup}
+library(tidyverse)
+library(p8105.datasets)
+library(plotly)
+```
+```{r}
+
+brooklyn_food =
+rest_inspec %>%
+  drop_na() %>%
+  select(boro, dba, zipcode, critical_flag, cuisine_description, score, grade, grade_date, violation_code, violation_description)%>%
+  filter(boro == "BROOKLYN")
+  
+head(brooklyn_food)
+```
