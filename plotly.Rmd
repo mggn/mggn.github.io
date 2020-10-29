@@ -19,7 +19,30 @@ brooklyn_food =
 rest_inspec %>%
   drop_na() %>%
   select(boro, dba, zipcode, critical_flag, cuisine_description, score, grade, grade_date, violation_code, violation_description)%>%
-  filter(boro == "BROOKLYN")
+  filter(boro == "BROOKLYN") %>%
+  mutate(
+    zipcode = as.factor(zipcode),
+    grade = as.factor(grade)
+  )
+
   
-head(brooklyn_food)
+#head(brooklyn_food)
+```
+
+```{r}
+#boxplots, brooklyn zipcodes and distribution of grades
+brooklyn_food %>%
+  mutate(zipcode = fct_reorder(zipcode, score)) %>% 
+  plot_ly(y = ~score, color = ~zipcode, type = "box", colors = "viridis")
+
+```
+
+```{r}
+#grade counts in Brooklyn
+
+brooklyn_food %>%
+  count(grade) %>% 
+  mutate(grade = fct_reorder(grade, n)) %>% 
+  plot_ly(x = ~grade, y = ~n, color = ~grade, type = "bar", colors = "viridis")
+
 ```
