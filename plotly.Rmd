@@ -13,6 +13,7 @@ library(tidyverse)
 library(p8105.datasets)
 library(plotly)
 ```
+
 ```{r}
 
 brooklyn_food =
@@ -48,17 +49,10 @@ brooklyn_food %>%
 ```
 
 ```{r}
-#now I'll try a heat map lol
+
+
 brooklyn_food %>%
-  mutate(
-    cuisine = as.factor(cuisine_description)
-  ) %>% 
-  select(zipcode, cuisine) %>%
-  filter(
-    zipcode %in% c(11205, 11201, 11215, 11217, 11231)
-  ) %>%
-  plot_ly(x = ~zipcode, y = ~cuisine, color = ~zipcode, type = "heatmap", colors = "viridis")
-  
+  count(violation_code)
 
 
 ```
