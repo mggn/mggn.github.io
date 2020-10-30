@@ -52,7 +52,11 @@ brooklyn_food %>%
 
 
 brooklyn_food %>%
-  count(violation_code)
-
+count(grade, grade_date) %>%
+  group_by(grade, grade_date) %>%
+  plot_ly (
+    x = ~grade_date, y = ~n, color = ~grade, type = "scatter", mode = "markers", colors = "viridis",
+    alpha = .5
+  )
 
 ```
