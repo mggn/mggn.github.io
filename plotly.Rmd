@@ -6,7 +6,7 @@ output:
     vertical_layout: fill
 ---
 
-# let's use the restaurant data and look at brooklyn
+# Data exploration using NYC restaurant inspection data from the Department of Health and Mental Hygiene
 
 ```{r setup, include=FALSE}
 library(tidyverse)
@@ -35,12 +35,11 @@ rest_inspec %>%
 Column {data-width=650}
 -----------------------------------------------------------------------
 
-### Chart A
-
+### Distribution of scores by Brooklyn zipcodes
 
 
 ```{r}
-#boxplots, brooklyn zipcodes and distribution of grades
+#boxplots, brooklyn zipcodes and distribution of scores
 brooklyn_food %>%
   mutate(zipcode = fct_reorder(zipcode, score)) %>% 
   plot_ly(y = ~score, color = ~zipcode, type = "box", colors = "viridis")
@@ -51,7 +50,7 @@ brooklyn_food %>%
 Column {data-width=350}
 -----------------------------------------------------------------------
 
-### Chart B
+### Grade counts in Brooklyn
 
 ```{r}
 #grade counts in Brooklyn
@@ -63,7 +62,7 @@ brooklyn_food %>%
 
 ```
 
-### Chart C
+### Grade counts by date in Brooklyn
 
 ```{r}
 

@@ -6,10 +6,12 @@ output:
     toc_float: true
 ---
 
-# This is Jeff's awesome website
+# Website
 
-![](https://media.giphy.com/media/drXGoW1iudhKw/giphy.gif)
+<img src="images/IMG_4065.jpg" style="width:75%">
+
+<img src="images/IMG_4046.jpg" style="width:75%">
 
 [About me](about.html)
 
-test test
+

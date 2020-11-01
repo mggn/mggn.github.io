@@ -6,4 +6,57 @@ output:
     toc_float: true
 ---
 
-# This page will have information
+## Introduction
+
+When I was born in Guayaquil Ecuador, my parents sold their car to pay the hospital bill. Knowing that story and what my parents had to do in order to pay for health services, I decided to pursue public health and dedicate myself to using data to assess and tailor interventions and health programs with the goal of improving access to care.
+
+### Education
+
+**Columbia University Mailman School of Public Health**, New York, NY
+Master of Public Health, Epidemiology, Certificate in Applied Biostatistics, *Anticipated May 2021*
+
+**Williams College**, Williamstown, MA
+Bachelor of Arts, Biology with Honors, French, *June 2017*
+
+### Work Experience
+
+**Columbia University Mailman School of Public Health, New York, NY**
+
+Graduate Teaching Assistant, Department of Biostatistics, *September 2020-Present*
+
+•	Teaching assistant for P8120: Analysis of Categorical Data  
+•	Contribute to the development of course materials to ensure content and method of delivery are consistent with learning objectives,   ease the transition to an on-line learning format  
+•	Manage the course canvas site for timely distribution of course materials to students  
+•	Evaluate assignments and exams for 30 students to provide prompt and appropriate feedback to guide their learning  
+•	Engage with and assist students with subject material by conducting weekly office hours and responding to student e-mails within a specified timeframe   
+
+**ICAP at Columbia University**, New York, NY
+
+Student Data Analyst, PHIA Project, *July 2020-Present*
+
+•	Produce numerous ad hoc summary reports from complex laboratory and interview data to improve processes and workflow  
+•	Clean and create datasets and documentation for statistical analyses and for public release  
+•	Liaise with CDC and in-country stakeholders to conduct research analyses, coordinate logistical efforts for laboratory testing and    report creation for returning participant results
+
+**Columbia University Mailman School of Public Health**, New York, NY
+
+Data Analytics/Epidemiology Graduate Research Assistant, *May 2020-September 2020*
+
+•	Analyze epidemiologic data using SAS (including linear and logistic regression analysis) to determine effects of Hurricane Exposure in a cohort of 421 pregnant women on pregnancy and birth outcomes, including conducting chart abstraction from medical records (EMR) and survey data  
+•	Conduct literature reviews for studies relating natural disasters to pregnancy outcomes and leukocyte telomere length in newborns; reviewed and summarized 50 medical articles and produced summary report for senior researcher  
+•	Writing manuscript for submission to peer-reviewed journals
+
+**Northwell Health**, Great Neck, NY
+
+Research Assistant, *August 2017-August 2019* 
+
+•	Aided in developing research protocols for epidemiological studies in cancer and mental health research through development and       design of surveys and recruitment materials, which were distributed to over 100 participants  
+•	Coordinated submission of Institutional Review Board applications for all research protocols, ensuring accuracy and compliance with   complex regulations to facilitate timely regulatory approval  
+•	Implemented and executed effective recruiting plans for participant enrollment and data collection in clinical and community work     settings; successfully identified hard-to-reach candidates and persistently following through to overcome barriers to recruitment  
+•	Generated weekly recruitment schedule by screening patients on AllScripts and Soarian Electronic Medical Record software and          coordinating with oncologists at the Monter Cancer Center  
+•	Accurately created and maintained databases using REDCap for research data collection and management  
+
+### Skills
+
+Computer: Experienced with SAS, MS Office (Word, PowerPoint, Excel, Access), REDCap, EMR Systems (AllScripts, EPIC, Soarian), knowledge of R, MySQL, STATA; Languages: Trilingual in English, Spanish, and French
+

@@ -15,4 +15,5 @@ navbar:
       href: https://www.linkedin.com/in/maria-guzman-4a036b74/
 output:
   html_document:
-    theme: cerulean
+    theme: flatly
+    
