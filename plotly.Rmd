@@ -1,18 +1,20 @@
 ---
-title: "Plotly examples"
+title: "plotly examples"
 output: 
-  html_document:
-    toc: true
-    toc_float: true
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
 ---
 
 # let's use the restaurant data and look at brooklyn
 
-```{r setup}
+```{r setup, include=FALSE}
 library(tidyverse)
 library(p8105.datasets)
 library(plotly)
+library(flexdashboard)
 ```
+
 
 ```{r}
 
@@ -30,6 +32,13 @@ rest_inspec %>%
 #head(brooklyn_food)
 ```
 
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Chart A
+
+
+
 ```{r}
 #boxplots, brooklyn zipcodes and distribution of grades
 brooklyn_food %>%
@@ -37,6 +46,12 @@ brooklyn_food %>%
   plot_ly(y = ~score, color = ~zipcode, type = "box", colors = "viridis")
 
 ```
+
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B
 
 ```{r}
 #grade counts in Brooklyn
@@ -47,6 +62,8 @@ brooklyn_food %>%
   plot_ly(x = ~grade, y = ~n, color = ~grade, type = "bar", colors = "plasma")
 
 ```
+
+### Chart C
 
 ```{r}
 
