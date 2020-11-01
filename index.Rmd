@@ -1,17 +1,25 @@
 ---
-title: "My awesome website"
+title: "mggn"
 output: 
   html_document:
     toc: true
     toc_float: true
 ---
+  
 
-# Website
+## Hi, I'm Maria. I'm human shaped.
+
+[About me](about.html)
+
+**Williamstown, MA October 2016**
 
 <img src="images/IMG_4065.jpg" style="width:75%">
 
 <img src="images/IMG_4046.jpg" style="width:75%">
 
-[About me](about.html)
+<img src="images/IMG_4860.jpg" style="width:75%">
+
+*the mountains, the mountains, we greet them with a song*
+
 
 

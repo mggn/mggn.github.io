@@ -5,7 +5,7 @@ navbar:
   right:
     - text: "About"
       href: about.html
-    - text: "Plotly"
+    - text: "Plotly Dashboard"
       href: plotly.html
     - icon: fa-envelope fa-lg
       href: mailto:<mgg2153@cumc.columbia.edu>
