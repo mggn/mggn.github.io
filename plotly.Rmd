@@ -42,7 +42,10 @@ Column {data-width=650}
 #boxplots, brooklyn zipcodes and distribution of scores
 brooklyn_food %>%
   mutate(zipcode = fct_reorder(zipcode, score)) %>% 
-  plot_ly(x = ~zipcode, y = ~score, color = ~zipcode, type = "box", colors = "viridis")
+  plot_ly(x = ~zipcode, y = ~score, color = ~zipcode, type = "box", colors = "viridis") %>%
+  layout(
+    xaxis = list(title = "Brooklyn zipcodes")
+  )
 
 ```
 
