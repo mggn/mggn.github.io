@@ -44,7 +44,8 @@ brooklyn_food %>%
   mutate(zipcode = fct_reorder(zipcode, score)) %>% 
   plot_ly(x = ~zipcode, y = ~score, color = ~zipcode, type = "box", colors = "viridis") %>%
   layout(
-    xaxis = list(title = "Brooklyn zipcodes")
+    xaxis = list(title = "Brooklyn zipcodes"),
+    yaxis = list(title = "Score")
   )
 
 ```
@@ -61,7 +62,11 @@ Column {data-width=350}
 brooklyn_food %>%
   count(grade) %>% 
   mutate(grade = fct_reorder(grade, n)) %>% 
-  plot_ly(x = ~grade, y = ~n, color = ~grade, type = "bar", colors = "plasma")
+  plot_ly(x = ~grade, y = ~n, color = ~grade, type = "bar", colors = "plasma") %>%
+  layout(
+    xaxis = list(title = "Grade"),
+    yaxis = list(title = "Count (n)")
+  )
 
 ```
 
@@ -76,6 +81,10 @@ count(grade, grade_date) %>%
   plot_ly (
     x = ~grade_date, y = ~n, color = ~grade, type = "scatter", mode = "markers", colors = "viridis",
     alpha = .5
+  )%>%
+  layout(
+    xaxis = list(title = "Date grade assigned"),
+    yaxis = list(title = "Grade count (n)")
   )
 
 ```
